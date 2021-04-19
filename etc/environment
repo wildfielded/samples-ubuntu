@@ -1,0 +1,4 @@
+##### Add this for work through proxy with authorization
+https_proxy="http://proxyuser:password123@192.168.192.168:3128"
+http_proxy="http://proxyuser:password123@192.168.192.168:3128"
+ftp_proxy="http://proxyuser:password123@192.168.192.168:3128"
