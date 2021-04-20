@@ -1,0 +1,4 @@
+Acquire::https::Proxy "http://proxyuser:password123@192.168.192.168:3128";
+Acquire::http::Proxy "http://proxyuser:password123@192.168.192.168:3128";
+Acquire::ftp::Proxy "http://proxyuser:password123@192.168.192.168:3128";
+Acquire::::Proxy "true";
