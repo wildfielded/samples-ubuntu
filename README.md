@@ -1,9 +1,12 @@
 # Configuration files samples for Ubuntu/Kubuntu
-Based on self experience.
-1. Proxy configuration    
+Based on my own experience.
+1. Some useful aliases    
+[**`/home/user/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bash_aliases) - Aliases file    
+----
+2. Proxy configuration    
 [**`/etc/apt/apt.conf.d/proxy`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/apt/apt.conf.d/proxy) - For APT only (old way)    
 [**`/etc/environment`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/environment) - System-wide proxy configuration sample    
 ----
-2. For Heroku login    
+3. For Heroku login    
 [**`/home/user/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.netrc) - Makes Heroku login simple    
 ----
