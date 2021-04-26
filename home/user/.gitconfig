@@ -1,0 +1,8 @@
+[http]
+	proxy = http://192.168.192.168:3128
+[core]
+	editor = /opt/sublime_text/sublime_text
+[user]
+	name = Ded Wildfield
+	email = wildfielded@gmail.com
+

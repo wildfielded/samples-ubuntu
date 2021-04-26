@@ -8,6 +8,9 @@ Based on my own experience.
 [**`/etc/environment`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/environment) - System-wide proxy configuration sample    
 [**`/etc/wgetrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/wgetrc) - Possible overrides for **wget**    
 ----
-3. For Heroku login    
+3. GIT matters
+[**`/home/user/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.gitconfig) - Some tips which may be used both globally or locally    
+----
+4. For Heroku login    
 [**`/home/user/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.netrc) - Makes **Heroku** login simple    
 ----
