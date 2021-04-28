@@ -1,5 +1,5 @@
-# Configuration files samples for Ubuntu/Kubuntu
-Based on my own experience.
+# Configuration samples for Ubuntu/Kubuntu
+Based on my dummy experience.
 1. Some useful aliases    
 [**`/home/user/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bash_aliases) - Aliases file    
 ----
