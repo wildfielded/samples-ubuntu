@@ -14,7 +14,7 @@ Based on my dummy experience.
 4. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
 I don't know why Midnight Commander has too light and bright blue background color on some screens.
-We can create custom skin based on default skin and can correct blue background more dark.
+We can create our own skin based on the default skin and make the blue background darker.
 ----
 5. For **Heroku** login    
 [**`/home/user/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.netrc) - Makes **Heroku** login simple    
