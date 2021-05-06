@@ -1,7 +1,8 @@
 # Configuration samples for Ubuntu/Kubuntu
 Based on my dummy experience.
-1. Some useful aliases    
-[**`/home/user/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bash_aliases) - Aliases file    
+1. **Bash** tuning    
+[**`/home/user/.bashrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bashrc) - Prompt shortening    
+[**`/home/user/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bash_aliases) - Some useful aliases    
 ----
 2. **Proxy** configuration    
 [**`/etc/apt/apt.conf.d/proxy`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/apt/apt.conf.d/proxy) - For **apt** only (old way)    
