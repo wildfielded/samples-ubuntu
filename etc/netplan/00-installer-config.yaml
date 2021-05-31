@@ -1,17 +1,16 @@
-# This is the network config written by 'subiquity'
 network:
   ethernets:
     enp0s3:
       addresses:
-      - 10.130.3.243/23
-      gateway4: 10.130.3.254
+      - 192.168.192.168/22
+      gateway4: 192.168.192.254
       nameservers:
         addresses:
-        - 172.22.32.245
-        - 172.22.32.246
-        - 172.22.32.247
+        - 172.16.132.245
+        - 172.16.133.246
+        - 172.16.134.247
         search:
-        - odusb.so
-        - bur.odusb.so
-        - bur.so-ups.ru
+        - local.wildfielded.site
+        - wildfielded.site
+        - ssszone.ru
   version: 2
