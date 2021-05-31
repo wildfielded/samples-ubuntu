@@ -1,0 +1,17 @@
+# This is the network config written by 'subiquity'
+network:
+  ethernets:
+    enp0s3:
+      addresses:
+      - 10.130.3.243/23
+      gateway4: 10.130.3.254
+      nameservers:
+        addresses:
+        - 172.22.32.245
+        - 172.22.32.246
+        - 172.22.32.247
+        search:
+        - odusb.so
+        - bur.odusb.so
+        - bur.so-ups.ru
+  version: 2
