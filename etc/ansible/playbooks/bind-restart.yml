@@ -1,0 +1,13 @@
+---
+- name: Bind9 restart
+  hosts: dns
+  become: yes
+  tasks:
+    - name: Restart DNS
+      service:
+        name: bind9
+        state: restarted
+      register: ssh_result
+    - name: Debug output
+      debug:
+        msg: "Test output from {{ ansible_host }} and ssh_result is {{ ssh_result.status.Result }}"
