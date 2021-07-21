@@ -6,7 +6,7 @@ alias sr='shutdown -r now'
 alais sp='shutdown -P now'
 
 ##### Access to FreeBSD with default KOI8-R locale
-alias bbb='luit -encoding KOI8-R ssh -l admlogin -p 2222 freebsd.bastion.site'
+alias bbb='luit -encoding KOI8-R ssh -l admlogin -p 2222 freebsd.wildfielded.site'
 
 ##### Mounting SMB ver.1 resource
 ##### (Required: sudo apt install cifs-utils)
