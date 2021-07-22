@@ -1,8 +1,8 @@
 # Configuration samples for Ubuntu/Kubuntu
 Based on my dummy experience.
 1. **Bash** tuning    
-[**`/home/user/.bashrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bashrc) - Prompt shortening    
-[**`/home/user/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.bash_aliases) - Some useful aliases    
+[**`/home/ded/.bashrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bashrc) - Prompt shortening    
+[**`/home/ded/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bash_aliases) - Some useful aliases    
 ----
 2. Networking    
 [**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through netplan (Ubuntu)    
@@ -14,10 +14,10 @@ Based on my dummy experience.
 [**`/etc/wgetrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/wgetrc) - Possible overrides for **wget**    
 ----
 4. SSH    
-[**`/home/user/.ssh/config`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.ssh/config) - It works    
+[**`/home/ded/.ssh/config`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.ssh/config) - It works (Old ssh clients and Git accounts)    
 ----
 5. **git** matters    
-[**`/home/user/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.gitconfig) - Some tips which may be used both globally or locally    
+[**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
 ----
 6. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
@@ -25,5 +25,5 @@ I don't know why Midnight Commander has too light and bright blue background col
 We can create our own skin based on the default skin and make the blue background darker.
 ----
 7. For **Heroku** login    
-[**`/home/user/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/user/.netrc) - Makes **Heroku** login simple    
+[**`/home/ded/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.netrc) - Makes **Heroku** login simple    
 ----
