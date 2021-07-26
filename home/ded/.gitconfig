@@ -5,3 +5,6 @@
 [user]
 	name = Ded Wildfield
 	email = ded@wildfielded.site
+##### HTTPS with personal access token when SSH is administratively unavailable
+[credential]
+	helper = store --file ~/.git-cred0
