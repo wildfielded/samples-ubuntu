@@ -24,6 +24,9 @@ Based on my dummy experience.
 I don't know why Midnight Commander has too light and bright blue background color on some screens.
 We can create our own skin based on the default skin and make the blue background darker.
 ----
-7. For **Heroku** login    
+7. **Sublime Text** customization    
+[**`/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings) - Some useful tunes    
+----
+8. For **Heroku** login    
 [**`/home/ded/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.netrc) - Makes **Heroku** login simple    
 ----

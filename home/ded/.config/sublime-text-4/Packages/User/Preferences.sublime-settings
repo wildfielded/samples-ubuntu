@@ -1,0 +1,22 @@
+// Settings in here override those in "Default/Preferences.sublime-settings",
+// and are overridden in turn by syntax-specific settings.
+{
+    "font_size": 13,
+    "rulers": [ 80 ],
+    "tab_size": 4,
+    "translate_tabs_to_spaces": true,
+    "word_wrap": false,
+    "match_brackets": true,
+    "match_brackets_content": true,
+    "match_brackets_square": true,
+    "match_brackets_braces": true,
+    "match_brackets_angle": false,
+    "match_tags": true,
+    "match_selection": true,
+    "trim_trailing_white_space_on_save": false,
+    "default_line_ending": "unix",
+    "show_encoding": true,
+    "color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+    "dark_color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+    "light_color_scheme": "Packages/Color Scheme - Default/Breakers.sublime-color-scheme",
+}
