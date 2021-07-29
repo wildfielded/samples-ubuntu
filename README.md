@@ -16,8 +16,9 @@ Based on my dummy experience.
 4. SSH    
 [**`/home/ded/.ssh/config`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.ssh/config) - It works (Old ssh clients and Git accounts)    
 ----
-5. **git** matters    
+5. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
+[**`/home/ded/.git-cded0`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.git-cred0) - Format sample for personal access token    
 ----
 6. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
