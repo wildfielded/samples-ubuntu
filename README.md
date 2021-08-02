@@ -1,8 +1,10 @@
-# Configuration samples for Ubuntu/Kubuntu
+# Configuration samples and tips for Ubuntu/Kubuntu
 Based on my dummy experience.
-1. **Bash** tuning    
+1. **Environment** tuning    
 [**`/home/ded/.bashrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bashrc) - Prompt shortening    
 [**`/home/ded/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bash_aliases) - Some useful aliases    
+[**`/etc/default/console-setup`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/console-setup) and    
+[**`/etc/systemd/logind.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/logind.conf) - It used to work with 9 ttys    
 ----
 2. Networking    
 [**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through netplan (Ubuntu)    

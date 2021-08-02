@@ -1,0 +1,2 @@
+##### I am used to working with more consoles
+ACTIVE_CONSOLES="/dev/tty[1-9]"
