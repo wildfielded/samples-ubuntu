@@ -2,8 +2,8 @@
 alias lll='ls -laF | more'
 
 ##### Trivials
-alias sr='shutdown -r now'
-alais sp='shutdown -P now'
+alias sr='sudo shutdown -r now'
+alais sp='sudo shutdown -P now'
 
 ##### Access to FreeBSD with default KOI8-R locale
 alias bbb='luit -encoding KOI8-R ssh -l admlogin -p 2222 freebsd.wildfielded.site'
