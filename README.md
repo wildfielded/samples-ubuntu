@@ -22,16 +22,19 @@ Based on my dummy experience.
 5. NTP    
 [**`/etc/systemd/timesyncd.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/timesyncd.conf) - Don't forget it with **`timedatectl set-timezone Asia/Moscow`**    
 ----
-6. **Git** matters    
+6. Logging    
+[**`/etc/rsyslog.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/rsyslog.conf) - Main config for **rsyslogd**    
+----
+7. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
 [**`/home/ded/.git-cded0`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.git-cred0) - Format sample for personal access token    
 ----
-7. New **mc** skin    
+8. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
 I don't know why Midnight Commander has too light and bright blue background color on some screens.
 We can create our own skin based on the default skin and make the blue background darker.
 ----
-8. Unsorted    
+9. Unsorted    
 [**`/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings) - **Sublime-Text** customization    
 [**`/home/ded/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.netrc) - Makes **Heroku** login simple    
 ----
