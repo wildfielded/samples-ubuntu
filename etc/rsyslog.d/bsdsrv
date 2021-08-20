@@ -1,0 +1,22 @@
+#####=====----- Configured by Ded Wildfield -----=====#####
+
+:fromhost-ip, isequal, "192.168.192.122"	/var/log/servers/castle1
+& stop
+
+if $fromhost-ip == '192.168.192.123' then /var/log/servers/castle2
+& stop
+
+:fromhost, isequal, "bastion"			/var/log/servers/bastion
+& stop
+
+if ( $fromhost-ip == "172.16.172.240" ) then {
+	action(type="omfile" file="/var/log/servers/fort" )
+	stop
+}
+
+if ( $fromhost == "fortress" ) then {
+	action(type="omfile" file="/var/log/servers/fortress" )
+	stop
+}
+
+###########################################################################

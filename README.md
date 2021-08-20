@@ -7,7 +7,7 @@ Based on my dummy experience.
 [**`/etc/default/console-setup`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/console-setup) and    
 [**`/etc/systemd/logind.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/logind.conf) - It used to work with 9 ttys    
 ----
-2. Networking    
+2. **Networking**    
 [**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through netplan (Ubuntu)    
 [**`/etc/netplan/01-network-manager-all.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/01-network-manager-all.yaml) - Let NetworkManager working (Kubuntu), "he" is Ironman =)    
 ----
@@ -16,14 +16,15 @@ Based on my dummy experience.
 [**`/etc/environment`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/environment) - System-wide proxy configuration sample    
 [**`/etc/wgetrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/wgetrc) - Possible overrides for **wget**    
 ----
-4. SSH    
+4. **SSH**    
 [**`/home/ded/.ssh/config`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.ssh/config) - It works (Old ssh clients and Git accounts)    
 ----
 5. NTP    
 [**`/etc/systemd/timesyncd.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/timesyncd.conf) - Don't forget it with **`timedatectl set-timezone Asia/Moscow`**    
 ----
-6. Logging    
+6. **Logging**    
 [**`/etc/rsyslog.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/rsyslog.conf) - Main config for **rsyslogd**    
+[**`/etc/rsyslog.d/bsdsrv`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/rsyslog.d/bsdsrv) - Sample for external event sources    
 ----
 7. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
