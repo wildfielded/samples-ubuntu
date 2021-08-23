@@ -1,10 +1,12 @@
 #####=====----- Configured by Ded Wildfield -----=====#####
 
-:fromhost-ip, isequal, "192.168.192.122"	/var/log/servers/castle1
+:fromhost-ip, isequal, "192.168.192.122"	-/var/log/servers/castle1
 & stop
 
-if $fromhost-ip == '192.168.192.123' then /var/log/servers/castle2
+if $fromhost-ip == '192.168.192.123' then -/var/log/servers/castle2
 & stop
+
+:fromhost, startswith, "cisco"			-/var/log/cisco/cisco
 
 :fromhost, isequal, "bastion"			/var/log/servers/bastion
 & stop
