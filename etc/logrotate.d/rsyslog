@@ -1,0 +1,38 @@
+/var/log/syslog
+{
+	rotate 7
+	daily
+	missingok
+	notifempty
+	delaycompress
+	compress
+	postrotate
+		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}
+
+/var/log/cron
+/var/log/debug
+/var/log/daemon
+/var/log/kernel
+/var/log/messages
+/var/log/multipathd
+/var/log/security/auth
+/var/log/user
+/var/log/security/auth
+{
+	compress
+	compresscmd bzip2
+	uncompresscmd bunzip2
+	create 0640 syslog adm
+	daily
+	ifempty
+	missingok
+	nodelaycompress
+	nomail
+	rotate 5
+	sharedscripts
+	postrotate
+		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}
