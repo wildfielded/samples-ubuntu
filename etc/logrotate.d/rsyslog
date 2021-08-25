@@ -1,7 +1,7 @@
 /var/log/syslog
 {
-	rotate 7
-	daily
+	rotate 12
+	monthly
 	missingok
 	notifempty
 	delaycompress
@@ -25,12 +25,12 @@
 	compresscmd bzip2
 	uncompresscmd bunzip2
 	create 0640 syslog adm
-	daily
+	monthly
 	ifempty
 	missingok
 	nodelaycompress
 	nomail
-	rotate 5
+	rotate 12
 	sharedscripts
 	postrotate
 		/usr/lib/rsyslog/rsyslog-rotate

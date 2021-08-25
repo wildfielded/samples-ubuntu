@@ -25,6 +25,8 @@ Based on my dummy experience.
 6. **Logging**    
 [**`/etc/rsyslog.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/rsyslog.conf) - Main config for **rsyslogd**    
 [**`/etc/rsyslog.d/bsdsrv`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/rsyslog.d/bsdsrv) - Sample for external event sources    
+[**`/etc/logrotate.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/logrotate.conf) - Defaults for logrotate    
+[**`/etc/logrotate.d/rsyslog`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/logrotate.d/rsyslog) - For example    
 ----
 7. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
@@ -32,10 +34,10 @@ Based on my dummy experience.
 ----
 8. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
-I don't know why Midnight Commander has too light and bright blue background color on some screens.
+I don't know why Midnight Commander has too light and gouged out the default blue background on some screens.
 We can create our own skin based on the default skin and make the blue background darker.
 ----
-9. Unsorted    
+9. Unplugged    
 [**`/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings) - **Sublime-Text** customization    
 [**`/home/ded/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.netrc) - Makes **Heroku** login simple    
 ----
