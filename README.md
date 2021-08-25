@@ -6,8 +6,10 @@ Based on my dummy experience.
 [**`/root/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/root/.bash_aliases) - Same, but feel difference    
 [**`/etc/adduser.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/adduser.conf) - Template for creating users with admin (sudo) rights    
 [**`/etc/login.defs`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/login.defs) - User policies    
-[**`/etc/default/console-setup`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/console-setup) and    
 [**`/etc/systemd/logind.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/logind.conf) - It used to work with 9 ttys    
+[**`/etc/default/console-setup`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/console-setup) 9 ttys and Russian locale    
+[**`/etc/default/keyboard`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/keyboard) - Russian locale    
+[**`/etc/default/locale`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/locale) - Russian locale    
 ----
 2. **Networking**    
 [**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through netplan (Ubuntu)    

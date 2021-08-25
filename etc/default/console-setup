@@ -1,2 +1,15 @@
-##### I am used to working with more consoles
+#####=====----- Configured by Ded Wildfield -----=====#####
+
+##### I am used to work with more consoles
 ACTIVE_CONSOLES="/dev/tty[1-9]"
+
+CHARMAP="UTF-8"
+
+##### CODESET="guess"
+CODESET="CyrSlav"
+FONTFACE="Fixed"
+FONTSIZE="8x16"
+
+VIDEOMODE=
+
+###########################################################################
