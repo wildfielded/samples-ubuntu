@@ -1,0 +1,16 @@
+#####=====----- Configured by Ded Wildfield -----=====#####
+##### There are "delta" from defaults only
+
+LOG_OK_LOGINS		yes
+
+SULOG_FILE	/var/log/sulog
+
+PASS_MAX_DAYS	180
+PASS_MIN_DAYS	1
+PASS_WARN_AGE	7
+
+LOGIN_RETRIES		3
+
+LOGIN_TIMEOUT		30
+
+###########################################################################

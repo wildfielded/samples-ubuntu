@@ -1,9 +1,11 @@
 # Configuration samples and tips for Ubuntu/Kubuntu
 Based on my dummy experience.
-1. **Environment** tuning    
+1. **Users** and their **Environment** tuning    
 [**`/home/ded/.bashrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bashrc) - Prompt shortening    
 [**`/home/ded/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.bash_aliases) - Some useful aliases    
 [**`/root/.bash_aliases`**](https://github.com/wildfielded/samples-ubuntu/blob/master/root/.bash_aliases) - Same, but feel difference    
+[**`/etc/adduser.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/adduser.conf) - Template for creating users with admin (sudo) rights    
+[**`/etc/login.defs`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/login.defs) - User policies    
 [**`/etc/default/console-setup`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/console-setup) and    
 [**`/etc/systemd/logind.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/systemd/logind.conf) - It used to work with 9 ttys    
 ----
