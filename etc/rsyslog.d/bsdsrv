@@ -1,14 +1,17 @@
 #####=====----- Configured by Ded Wildfield -----=====#####
 
-:fromhost-ip, isequal, "192.168.192.122"	-/var/log/servers/castle1
+:fromhost-ip, isequal, "192.168.192.122" -/var/log/servers/castle1
 & stop
 
 if $fromhost-ip == '192.168.192.123' then -/var/log/servers/castle2
 & stop
 
-:fromhost, startswith, "cisco"			-/var/log/cisco/cisco
+:fromhost, startswith, "cisco" -/var/log/cisco/cisco
 
-:fromhost, isequal, "bastion"			/var/log/servers/bastion
+if ($fromhost startswith "asa" or "pix") then -/var/log/cisco/firewall
+& stop
+
+:fromhost, isequal, "bastion" /var/log/servers/bastion
 & stop
 
 if ( $fromhost-ip == "172.16.172.240" ) then {
@@ -20,5 +23,13 @@ if ( $fromhost == "fortress" ) then {
 	action(type="omfile" file="/var/log/servers/fortress" )
 	stop
 }
+
+if ( $fromhost startswith "clients1" or "clients2" ) then /var/log/servers/clients12
+&stop
+
+#####=====----- Kick off debug messages from server and no this flood in /var/log/debug -----=====#####
+if ( $fromhost startswith "floodserver" and $syslogseverity-text == "debug" ) then stop
+if $fromhost startswith "floodserver" then -/var/log/servers/floodserver
+& stop
 
 ###########################################################################
