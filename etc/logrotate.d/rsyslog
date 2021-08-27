@@ -1,15 +1,4 @@
-/var/log/syslog
-{
-	rotate 12
-	monthly
-	missingok
-	notifempty
-	delaycompress
-	compress
-	postrotate
-		/usr/lib/rsyslog/rsyslog-rotate
-	endscript
-}
+#####=====----- Typical parameters for example -----=====#####
 
 /var/log/cron
 /var/log/debug
@@ -18,6 +7,7 @@
 /var/log/messages
 /var/log/multipathd
 /var/log/security/auth
+/var/log/syslog
 /var/log/user
 /var/log/security/auth
 {
@@ -30,9 +20,12 @@
 	missingok
 	nodelaycompress
 	nomail
-	rotate 12
+	rotate 13
+	start 0
 	sharedscripts
 	postrotate
 		/usr/lib/rsyslog/rsyslog-rotate
 	endscript
 }
+
+###########################################################################
