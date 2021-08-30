@@ -11,11 +11,11 @@
 /var/log/user
 /var/log/security/auth
 {
+	monthly
 	compress
 	compresscmd bzip2
 	uncompresscmd bunzip2
 	create 0640 syslog adm
-	monthly
 	ifempty
 	missingok
 	nodelaycompress
