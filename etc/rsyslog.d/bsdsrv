@@ -27,9 +27,11 @@ if ( $fromhost == "fortress" ) then {
 if ( $fromhost startswith "clients1" or "clients2" ) then /var/log/servers/clients12
 &stop
 
-#####=====----- Kick off debug messages from server and no this flood in /var/log/debug -----=====#####
-if ( $fromhost startswith "floodserver" and $syslogseverity-text == "debug" ) then stop
-if $fromhost startswith "floodserver" then -/var/log/servers/floodserver
+#####=====----- Kick off annoying messages from SRM server and exclude this flood from /var/log/debug and others -----=====#####
+if ( $fromhost startswith "floodsrv" and $syslogseverity-text == "debug" ) then stop
+if ( $fromhost startswith "floodsrv" and $syslogseverity-text == "info" and $programname startswith "vmware-dr" ) then stop
+if ( $fromhost startswith "floodsrv" and $syslogseverity-text == "warning" and $programname startswith "fileintegrity" ) then stop
+if $fromhost startswith "floodsrv" then -/var/log/servers/floodsrv
 & stop
 
 ###########################################################################
