@@ -12,8 +12,8 @@ Based on my dummy experience.
 [**`/etc/default/locale`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/locale) - Russian locale    
 ----
 2. **Networking**    
-[**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through netplan (Ubuntu)    
-[**`/etc/netplan/01-network-manager-all.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/01-network-manager-all.yaml) - Let NetworkManager working (Kubuntu), "he" is Ironman =)    
+[**`/etc/netplan/00-installer-config.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/00-installer-config.yaml) - Set interfaces through `netplan` with `networkd` (Ubuntu)    
+[**`/etc/netplan/01-network-manager-all.yaml`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/netplan/01-network-manager-all.yaml) - Let `NetworkManager` working (Kubuntu), "he" is Ironman =)    
 ----
 3. **Proxy** configuration    
 [**`/etc/apt/apt.conf.d/proxy`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/apt/apt.conf.d/proxy) - For **apt** only (old way)    
