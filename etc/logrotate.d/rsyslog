@@ -10,6 +10,7 @@
 /var/log/syslog
 /var/log/user
 /var/log/security/auth
+/var/log/security/sshd
 {
 	monthly
 	compress
