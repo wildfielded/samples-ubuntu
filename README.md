@@ -32,16 +32,19 @@ Based on my dummy experience.
 [**`/etc/logrotate.conf`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/logrotate.conf) - Defaults for logrotate    
 [**`/etc/logrotate.d/rsyslog`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/logrotate.d/rsyslog) - For example    
 ----
-7. **Git** matters    
+7. **Bind**    
+[**`/etc/bind/`**](https://github.com/wildfielded/samples-ubuntu/tree/master/etc/bind) - All the given configs provide the same functionality as the [**FreeBSD servers**](https://github.com/wildfielded/samples-freebsd/tree/master/usr/local/named/usr/local/etc/namedb)    
+----
+8. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
 [**`/home/ded/.git-cded0`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.git-cred0) - Format sample for personal access token    
 ----
-8. New **mc** skin    
+9. New **mc** skin    
 [**`/usr/share/mc/skins/_ded.ini`**](https://github.com/wildfielded/samples-ubuntu/blob/master/usr/share/mc/skins/_ded.ini)    
 I don't know why Midnight Commander has too light and gouged out the default blue background on some screens.
 We can create our own skin based on the default skin and make the blue background darker.
 ----
-9. Unplugged    
+10. Unplugged    
 [**`/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.config/sublime-text-4/Packages/User/Preferences.sublime-settings) - **Sublime-Text** customization    
 [**`/home/ded/.netrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.netrc) - Makes **Heroku** login simple    
 ----
