@@ -1,0 +1,79 @@
+// #####=====----- Configured by Ded Wildfield -----=====#####
+// General config for all servers
+
+logging {
+	channel file_log {	file	"/var/cache/bind/log/named.log" versions 10 size 10m;
+				severity	debug;
+				print-severity	yes;
+				print-time	yes;
+				print-category	yes;
+	};
+	channel syslog_log {	syslog		daemon;
+				severity	debug;
+				print-severity	yes;
+				print-category	yes;
+	};
+	category default	{ file_log; syslog_log; };
+	category database	{ null; };
+	category resolver	{ null; };
+};
+
+include		"/etc/bind/rndc.key";
+
+controls {
+	inet 127.0.0.1 port 953 allow { localhost; } keys { rndc-key; };
+};
+
+acl DEADNETS {
+	0.0.0.0/8;
+	100.64.0.0/10;
+	169.254.0.0/16;
+	192.0.0.0/24;
+	192.0.2.0/24;
+	192.168.0.0/16;
+	198.18.0.0/15;
+	198.51.100.0/24;
+	203.0.113.0/24;
+	224.0.0.0/3;
+};
+
+acl INTRANET {
+	localhost;
+	localnets;
+	10.10.0.0/16;
+	172.16.172.80/28;
+};
+
+acl UP_NS {
+	176.99.13.11;
+	176.99.13.14;
+	194.58.117.16;
+	194.58.117.17;
+	194.67.73.75;
+};
+
+acl FORT {
+	172.16.172.240;
+	172.16.172.242;
+	172.16.172.248;
+};
+
+options {
+	allow-query		{ none; };
+	allow-recursion		{ none; };
+	allow-transfer		{ none; };
+	blackhole		{ DEADNETS; };
+	directory		"/var/cache/bind";
+	disable-empty-zone	"255.255.255.255.in-addr.arpa";
+	dump-file		"/var/cache/bind/dump/named_dump.db";
+	listen-on		port 53 { 127.0.0.0/24; 172.31.172.240/28; 172.16.172.128/25; };
+	pid-file		"/var/run/named/named.pid";
+	query-source		address * port *;
+	rrset-order {		class	IN type MX name "wildfielded.site" order random;
+				order	cyclic;
+	};
+	statistics-file		"/var/cache/bind/stats/named.stats";
+	version			none;
+};
+
+// ########################################################################

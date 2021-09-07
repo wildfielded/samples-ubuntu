@@ -33,7 +33,7 @@ Based on my dummy experience.
 [**`/etc/logrotate.d/rsyslog`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/logrotate.d/rsyslog) - For example    
 ----
 7. **Bind**    
-[**`/etc/bind/`**](https://github.com/wildfielded/samples-ubuntu/tree/master/etc/bind) - All the given configs provide the same functionality as the [**FreeBSD servers**](https://github.com/wildfielded/samples-freebsd/tree/master/usr/local/named/usr/local/etc/namedb)    
+[**`/etc/bind/`**](https://github.com/wildfielded/samples-ubuntu/tree/master/etc/bind) - All the given configs provide the same functionality as in the [**example FreeBSD servers**](https://github.com/wildfielded/samples-freebsd/tree/master/usr/local/named/usr/local/etc/namedb)    
 ----
 8. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
