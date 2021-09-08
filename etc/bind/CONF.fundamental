@@ -1,8 +1,5 @@
 // #####=====----- Configured by Ded Wildfield -----=====#####
 
-// -------------------------------------------------
-// #####=====----- FUNDAMENTAL ZONES -----=====#####
-// -------------------------------------------------
 zone "." {
 	type			slave;
 	file			"slave/roots";
@@ -149,9 +146,6 @@ zone "253.in-addr.arpa" { type master; file "/etc/bind/master/empty.PTR"; notify
 zone "254.in-addr.arpa" { type master; file "/etc/bind/master/empty.PTR"; notify no; };
 zone "255.in-addr.arpa" { type master; file "/etc/bind/master/empty.PTR"; notify no; };
 
-// ----------------------------------------
-// #####=====----- SO ZONES -----=====#####
-// ----------------------------------------
 zone "up" {
 	type		forward;
 	forward		only;
