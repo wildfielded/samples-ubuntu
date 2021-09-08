@@ -1,0 +1,37 @@
+// #####=====----- Configured by Ded Wildfield -----=====#####
+
+view "INTERNAL" {
+	match-clients	{ !FORT; INTRANET; };
+	allow-query	{ !FORT; INTRANET; };
+	allow-recursion	{ !FORT; INTRANET; };
+	allow-transfer	{ !FORT; INTRANET; };
+	include		"/etc/bind/CONF.fundamental";
+	zone "172.16.172.in-addr.arpa" {
+		type	master;
+		file	"/etc/bind/master/172.16.172.in-addr.arpa";
+		notify	no;
+	};
+	zone "wildfielded.site" {
+		type	master;
+		file	"/etc/bind/master/I.wildfielded.site";
+		notify	no;
+	};
+};
+
+view "EXTERNAL" {
+	match-clients	{ any; };
+	allow-query	{ any; };
+	allow-transfer	{ INTRANET; UP_NS; };
+	zone "172.16.172.in-addr.arpa" {
+		type		master;
+		file		"/etc/bind/master/172.16.172.in-addr.arpa";
+		also-notify	{ FORT; };
+	};
+	zone "wildfielded.site" {
+		type		master;
+		file		"/etc/bind/master/E.wildfielded.site";
+		also-notify	{ FORT; };
+	};
+};
+
+// ########################################################################

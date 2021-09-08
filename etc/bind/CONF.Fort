@@ -1,0 +1,43 @@
+// #####=====----- Configured by Ded Wildfield -----=====#####
+
+view "INTERNAL" {
+	match-clients	{ INTRANET; };
+	allow-query	{ INTRANET; };
+	allow-recursion	{ INTRANET; };
+	allow-transfer	{ INTRANET; };
+	include		"/etc/bind/CONF.fundamental";
+	zone "172.16.172.in-addr.arpa" {
+		type			slave;
+		file			"slave/I.172.16.172.in-addr.arpa";
+		masterfile-format	text;
+		masters			{ 172.31.172.250; };
+		notify			no;
+	};
+	zone "wildfielded.site" {
+		type			slave;
+		file			"slave/I.wildfielded.site";
+		masterfile-format	text;
+		masters			{ 172.31.172.250; };
+		notify			no;
+	};
+};
+
+view "EXTERNAL" {
+	match-clients	{ any; };
+	allow-query	{ any; };
+	allow-transfer	{ INTRANET; UP_NS; };
+	zone "172.16.172.in-addr.arpa" {
+		type			slave;
+		file			"slave/E.172.16.172.in-addr.arpa";
+		masterfile-format	text;
+		masters			{ 172.16.172.250; };
+	};
+	zone "wildfielded.site" {
+		type			slave;
+		file			"slave/E.wildfielded.site";
+		masterfile-format	text;
+		masters			{ 172.16.172.250; };
+	};
+};
+
+// ########################################################################
