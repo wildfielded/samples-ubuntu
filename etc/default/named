@@ -1,6 +1,7 @@
-#
+#####=====----- Configured by Ded Wildfield -----=====#####
 # run resolvconf?
 RESOLVCONF=no
 
 # startup options for the server
+#####!!!!! Draw '-4' here but not in /usr/lib/systemd/system/named.service !!!!!#####
 OPTIONS="-4 -u bind"

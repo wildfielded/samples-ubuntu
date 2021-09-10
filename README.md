@@ -34,7 +34,7 @@ Based on my dummy experience.
 ----
 7. **Bind**    
 [**`/etc/bind/`**](https://github.com/wildfielded/samples-ubuntu/tree/master/etc/bind) - All the given configs provide the same functionality as in the [**example FreeBSD servers**](https://github.com/wildfielded/samples-freebsd/tree/master/usr/local/named/usr/local/etc/namedb)    
-[**`/etc/default/named`**]() - and don't forget to add **`-4`** flag for operating with IPv4 only    
+[**`/etc/default/named`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/default/named) - and don't forget to add **`-4`** flag for operating with IPv4 only    
 ----
 8. **Git** matters    
 [**`/home/ded/.gitconfig`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.gitconfig) - Some tips which may be used both globally or locally    
