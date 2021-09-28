@@ -7,6 +7,10 @@ network:
       - 192.168.192.168/22
       - 10.10.10.10/27
       gateway4: 192.168.192.254
+      routes:
+      - to: 10.20.30.0/24
+        via: 10.10.10.30
+        on-link: true
       nameservers:
         addresses:
         - 172.16.132.245
