@@ -1,18 +1,37 @@
 #####=====----- Typical parameters for example -----=====#####
 
 /var/log/cron
-/var/log/debug
 /var/log/daemon
 /var/log/kernel
 /var/log/messages
 /var/log/multipathd
 /var/log/security/auth
 /var/log/syslog
-/var/log/user
 /var/log/security/auth
 /var/log/security/sshd
 {
 	monthly
+	compress
+	compresscmd bzip2
+	uncompresscmd bunzip2
+	create 0640 syslog adm
+	ifempty
+	missingok
+	nodelaycompress
+	nomail
+	rotate 13
+	start 0
+	sharedscripts
+	postrotate
+		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}
+
+/var/log/debug
+/var/log/user
+/var/log/snmpd/snmpd
+{
+	weekly
 	compress
 	compresscmd bzip2
 	uncompresscmd bunzip2
@@ -44,6 +63,52 @@
 	sharedscripts
 	postrotate
 		/usr/lib/rsyslog/rsyslog-rotate
+	endscript
+}
+
+/var/log/apache2/access.log
+/var/log/apache2/error.log
+{
+	weekly
+	compress
+	create 640 root adm
+	ifempty
+	missingok
+	nodelaycompress
+	nomail
+	rotate 14
+	start 0
+	sharedscripts
+	postrotate
+		if invoke-rc.d apache2 status > /dev/null 2>&1; then \
+			invoke-rc.d apache2 reload > /dev/null 2>&1; \
+		fi;
+	endscript
+	prerotate
+		if [ -d /etc/logrotate.d/httpd-prerotate ]; then \
+			run-parts /etc/logrotate.d/httpd-prerotate; \
+		fi; \
+	endscript
+}
+
+/var/log/squid/access.log
+/var/log/squid/cache.log
+{
+	monthly
+	compress
+	create 0640 proxy proxy
+	ifempty
+	missingok
+	nodelaycompress
+	nomail
+	rotate 3
+	start 0
+	sharedscripts
+	prerotate
+		test ! -x /usr/sbin/sarg-reports || /usr/sbin/sarg-reports daily
+	endscript
+	postrotate
+		test ! -e /var/run/squid.pid || test ! -x /usr/sbin/squid || /usr/sbin/squid -k rotate
 	endscript
 }
 
