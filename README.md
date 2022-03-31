@@ -19,6 +19,7 @@ Based on my dummy experience.
 [**`/etc/apt/apt.conf.d/proxy`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/apt/apt.conf.d/proxy) - For **apt** only (old way)    
 [**`/etc/environment`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/environment) - System-wide proxy configuration sample    
 [**`/etc/wgetrc`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/wgetrc) - Possible overrides for **wget**    
+[**`/etc/profile`**](https://github.com/wildfielded/samples-ubuntu/blob/master/etc/profile) - The most universal (except of apt) proxy configuration sample via profile-file.    
 ----
 4. **SSH**    
 [**`/home/ded/.ssh/config`**](https://github.com/wildfielded/samples-ubuntu/blob/master/home/ded/.ssh/config) - It works (Old ssh clients and Git accounts)    
