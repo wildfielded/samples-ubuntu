@@ -1,0 +1,23 @@
+#####=====----- Add to /etc/profile this system-wide proxy tuning example -----=====#####
+
+PROXY_USR="proxyuser"
+PROXY_PWD="password123"
+PROXY_SRV="192.168.192.168:3128"
+
+PROXY_STR="http://${PROXY_USR}:${PROXY_PWD}@${PROXY_SRV}"
+
+ftp_proxy=${PROXY_STR}
+export ftp_proxy
+http_proxy=${PROXY_STR}
+export http_proxy
+https_proxy=${PROXY_STR}
+export https_proxy
+
+FTP_PROXY=${PROXY_STR}
+export FTP_PROXY
+HTTP_PROXY=${PROXY_STR}
+export HTTP_PROXY
+HTTPS_PROXY=${PROXY_STR}
+export HTTPS_PROXY
+
+##########################################################################
