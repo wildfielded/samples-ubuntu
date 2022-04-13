@@ -1,0 +1,13 @@
+---
+- name: Copying file for CryptoPro to profile
+  hosts: astra
+  become: true
+  tasks:
+  - name: Copy cpro_to_profile
+    ansible.builtin.copy:
+      src: /etc/ansible/files/cpro_to_profile
+      dest: /etc/profile.d/20_cryptopro.sh
+      owner: root
+      group: root
+      mode: '0644'
+...
