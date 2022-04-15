@@ -1,0 +1,16 @@
+#!/bin/bash
+
+OPENSSL_CMD='/usr/bin/openssl base64'
+LOGIN_FILE="${HOME}/.pleb"
+PASSW_FILE="${HOME}/.ppeb"
+
+echo "Введите логин на прокси сервер:"
+read -r LOGIN REST1
+echo "Введите пароль:"
+read -s -r PASSWORD REST2
+echo ${LOGIN} | ${OPENSSL_CMD} -in - > ${LOGIN_FILE}
+echo ${PASSWORD} | ${OPENSSL_CMD} -in - > ${PASSW_FILE}
+echo "Логин и пароль для доступа в интернет через прокси-сервер внесены в настройки."
+echo "Чтобы изменения вступили в силу, надо заново войти в систему."
+
+###########################################################################

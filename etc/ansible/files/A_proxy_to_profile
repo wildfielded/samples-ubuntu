@@ -1,0 +1,26 @@
+#####=====----- PROXY TUNING -----=====#####
+OPENSSL_CMD='/usr/bin/openssl base64 -d'
+LOGIN_FILE="${HOME}/.pleb"
+PASSW_FILE="${HOME}/.ppeb"
+
+
+PROX_USR="`${OPENSSL_CMD} -in ${LOGIN_FILE}`"
+PROX_PWD="`${OPENSSL_CMD} -in ${PASSW_FILE}`"
+PROX_SRV="172.31.54.190"
+PROX_PRT="9090"
+PROX_STR="http://${PROX_USR}:${PROX_PWD}@${PROX_SRV}:${PROX_PRT}"
+
+ftp_proxy=${PROX_STR}
+export ftp_proxy
+http_proxy=${PROX_STR}
+export http_proxy
+https_proxy=${PROX_STR}
+export https_proxy
+FTP_PROXY=${PROX_STR}
+export FTP_PROXY
+HTTP_PROXY=${PROX_STR}
+export HTTP_PROXY
+HTTPS_PROXY=${PROX_STR}
+export HTTPS_PROXY
+
+###########################################################################

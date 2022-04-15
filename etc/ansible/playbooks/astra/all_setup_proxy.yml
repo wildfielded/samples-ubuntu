@@ -1,0 +1,34 @@
+---
+- name: Copying file for CryptoPro to profile
+  hosts: astra
+  become: true
+  tasks:
+  - name: Copy A_proxy_to_profile
+    ansible.builtin.copy:
+      src: /etc/ansible/files/A_proxy_to_profile
+      dest: /etc/profile.d/01_proxy.sh
+      owner: root
+      group: root
+      mode: '0644'
+  - name: Copy A_get_inet
+    ansible.builtin.copy:
+      src: /etc/ansible/files/A_get_inet
+      dest: /usr/local/bin/get_inet
+      owner: root
+      group: root
+      mode: '0555'
+  - name: Copy A_sys_pleb
+    ansible.builtin.copy:
+      src: /etc/ansible/files/A_sys_pleb
+      dest: /root/.pleb
+      owner: root
+      group: root
+      mode: '0400'
+  - name: Copy A_sys_ppeb
+    ansible.builtin.copy:
+      src: /etc/ansible/files/A_sys_ppeb
+      dest: /root/.ppeb
+      owner: root
+      group: root
+      mode: '0400'
+...
