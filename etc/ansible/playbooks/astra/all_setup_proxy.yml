@@ -1,5 +1,5 @@
 ---
-- name: Copying file for CryptoPro to profile
+- name: Copying file for proxy configuration to profile
   hosts: astra
   become: true
   tasks:

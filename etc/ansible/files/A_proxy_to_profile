@@ -3,11 +3,10 @@ OPENSSL_CMD='/usr/bin/openssl base64 -d'
 LOGIN_FILE="${HOME}/.pleb"
 PASSW_FILE="${HOME}/.ppeb"
 
-
 PROX_USR="`${OPENSSL_CMD} -in ${LOGIN_FILE}`"
 PROX_PWD="`${OPENSSL_CMD} -in ${PASSW_FILE}`"
-PROX_SRV="172.31.54.190"
-PROX_PRT="9090"
+PROX_SRV="192.168.192.168"
+PROX_PRT="3128"
 PROX_STR="http://${PROX_USR}:${PROX_PWD}@${PROX_SRV}:${PROX_PRT}"
 
 ftp_proxy=${PROX_STR}
