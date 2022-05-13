@@ -1,0 +1,28 @@
+---
+- name: Setting up time synchronization
+  hosts: astra
+  become: true
+  tasks:
+    - name: Copy A_ntp_conf
+      ansible.builtin.copy:
+        src: /etc/ansible/files/A_ntp_conf
+        dest: /etc/systemd/timesyncd.conf
+        owner: root
+        group: root
+        mode: '0644'
+    - name: Deinstalling NTPd
+      ansible.builtin.apt:
+        name: ntp
+        state: absent
+        purge: true
+    - name: Enabling TimeSyncd
+      ansible.builtin.command:
+        argv:
+          - timedatectl
+          - set-ntp
+          - true
+    - name: Starting TimeSyncd
+      ansible.builtin.systemd:
+        name: systemd-timesyncd
+        state: started
+...
