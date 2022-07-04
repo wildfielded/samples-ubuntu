@@ -1,7 +1,7 @@
 [http]
 	proxy = http://proxyuser:password123@192.168.192.168:3128
 [core]
-	editor = /snap/sublime-text/current/opt/sublime_text/sublime_text
+	editor = /snap/bin/subl -n -w
 [user]
 	name = Ded Wildfield
 	email = ded@wildfielded.site
