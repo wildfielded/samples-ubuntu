@@ -2,6 +2,8 @@ network:
   version: 2
   renderer: networkd
   ethernets:
+
+    ##### Static IP
     enp0s3:
       addresses:
       - 192.168.192.168/22
@@ -20,3 +22,16 @@ network:
         - local.wildfielded.site
         - wildfielded.site
         - ssszone.ru
+
+    ##### Simple DHCP
+    enp0s4:
+      dhcp4: true
+
+    ##### DHCP with MAC-address spoofing
+    ens1f5:
+      match:
+        ##### Real MAC
+        macaddress: 80:aa:bc:de:f8:74
+      ##### Spoofed MAC
+      macaddress: 00:07:0e:de:ca:f4
+      dhcp4: true
