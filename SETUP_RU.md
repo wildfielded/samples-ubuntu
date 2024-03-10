@@ -13,7 +13,7 @@
 Каноническая установка docker и docker-compose (под **`sudo -i`**) в
 соответствии с официальной документацией Ubuntu:
 
-1. Сначала обычное обновление списков софта
+1. Сначала обычное обновление базы ПО в подключенных репозиториях
 ```bash
 apt update
 ```
@@ -33,6 +33,10 @@ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/
 4. Создать файл `/etc/apt/sources.list.d/docker.list`, в котором должна быть строка:
 ```text
 deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download/docker.com/linux/ubuntu jammy stable
+```
+5. Ещё раз обновить базу ПО в подключенных репозиториях
+```bash
+apt update
 ```
 
 [:arrow_up: Содержание](#содержание)
