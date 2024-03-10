@@ -26,6 +26,10 @@ apt install curl
 apt install gnupg
 apt install software-properties-common
 ```
+3. Скачать GPG-ключ репозитория Docker в директорию для `keyrings`:
+```bash
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
 
 [:arrow_up: Содержание](#содержание)
 
