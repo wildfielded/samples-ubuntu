@@ -30,6 +30,10 @@ apt install software-properties-common
 ```bash
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
+4. Создать файл `/etc/apt/sources.list.d/docker.list`, в котором должна быть строка:
+```text
+deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download/docker.com/linux/ubuntu jammy stable
+```
 
 [:arrow_up: Содержание](#содержание)
 
