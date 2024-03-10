@@ -51,7 +51,9 @@ apt install containerd.io
 apt install docker-buildx-plugin
 apt install docker-compose-plugin
 ```
-8. Проверка установки сервиса:
+8. В файле `/etc/group` добавить своего пользователя в группу `docker`, чтобы
+работать с контейнерами без `sudo`.
+9. Проверка установки сервиса:
 ```bash
 systemctl status docker.service
 ```
