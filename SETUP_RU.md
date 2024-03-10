@@ -43,6 +43,22 @@ apt update
 ```bash
 apt-cache policy docker-ce
 ```
+7. Собственно установка необходимых пакетов:
+```bash
+apt install docker-ce
+apt install docker-ce-cli
+apt install containerd.io
+apt install docker-buildx-plugin
+apt install docker-compose-plugin
+```
+8. Проверка установки сервиса:
+```bash
+systemctl status docker.service
+```
+Или ещё можно запустить тестовый контейнер:
+```bash
+docker run hello-world
+```
 
 [:arrow_up: Содержание](#содержание)
 
