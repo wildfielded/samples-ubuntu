@@ -38,6 +38,11 @@ deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download/docker.
 ```bash
 apt update
 ```
+6. Проверить на всякий случай, что установка необходимых пакетов будет из
+репозитория Docker:
+```bash
+apt-cache policy docker-ce
+```
 
 [:arrow_up: Содержание](#содержание)
 
