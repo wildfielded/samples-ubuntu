@@ -69,6 +69,12 @@ docker run hello-world
 
 ## Работа с Docker ##
 
+1. Сборка docker-image при наличии `${PROJECT_DIR}/Dockerfile`:
+```bash
+cd ${PROJECT_DIR}
+docker build -t project:ver1 .
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
