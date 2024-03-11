@@ -20,6 +20,18 @@
 ```bash
 sudo locale-gen
 ```
+После этого отредактировать файл `/etc/default/locale` касательно
+```bash
+LANG=ru_RU.UTF-8
+```
+Можно это сделать не глобально, а на уровне пользователя.
+
+То есть обратить внимание на файлы:
+- `/etc/default/keyboard`
+- `/etc/default/console-setup`
+или аналогично в пользовательском окружении:
+- `~/.keyboard`
+- `~/.console-setup`
 
 [:arrow_up: Содержание](#содержание)
 
