@@ -74,6 +74,10 @@ docker run hello-world
 cd ${PROJECT_DIR}
 docker build -t project:ver1 .
 ```
+2. Запуск контейнера из образа
+```bash
+docker run -d -p 8080:7077/tcp project:ver1
+```
 
 [:arrow_up: Содержание](#содержание)
 
