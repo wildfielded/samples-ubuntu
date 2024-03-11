@@ -12,7 +12,13 @@
 
 ## Русская локаль Ubuntu ##
 
+На основе [tokmakov.msk.ru/blog/item/466](https://tokmakov.msk.ru/blog/item/466).
 
+В файле `/etc/locale.gen` раскомментировать строку с `ru_RU.UTF-8` и потом дать
+команду
+```bash
+sudo locale-gen
+```
 
 ----
 
