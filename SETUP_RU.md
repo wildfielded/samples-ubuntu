@@ -119,6 +119,8 @@ docker build -t project:ver1 .
 ```
 2. Запуск контейнера из образа
 ```bash
+docker run -p 8080:7077/tcp project:ver1
+# Без консоли (detach)
 docker run -d -p 8080:7077/tcp project:ver1
 ```
 3. Очистка системы от неиспользуемых образов и контейнеров
