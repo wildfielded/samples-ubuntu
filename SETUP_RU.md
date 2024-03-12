@@ -39,6 +39,15 @@ LANG=ru_RU.UTF-8
 
 ## Установка FastAPI ##
 
+```bash
+pip install "fastapi[all]"
+```
+Что должно быть эквивалентно:
+```bash
+pip install fastapi
+pip install "uvicorn[standard]"
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
