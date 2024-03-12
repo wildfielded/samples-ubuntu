@@ -121,6 +121,10 @@ docker build -t project:ver1 .
 ```bash
 docker run -d -p 8080:7077/tcp project:ver1
 ```
+3. Очистка системы от неиспользуемых образов и контейнеров
+```bash
+docker system prune -f
+```
 
 [:arrow_up: Содержание](#содержание)
 
