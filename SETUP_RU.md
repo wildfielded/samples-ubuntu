@@ -123,7 +123,11 @@ docker run -p 8080:7077/tcp project:ver1
 # Без консоли (detach)
 docker run -d -p 8080:7077/tcp project:ver1
 ```
-3. Очистка системы от неиспользуемых образов и контейнеров
+3. Удаление конкретного образа
+```bash
+docker rmi ad45fe...
+```
+4. Очистка системы от неиспользуемых образов и контейнеров
 ```bash
 docker system prune -f
 ```
