@@ -112,26 +112,30 @@ docker run hello-world
 
 ## Работа с Docker ##
 
-1. Сборка docker-image при наличии `${PROJECT_DIR}/Dockerfile`:
+1. :arrow_right: Сборка docker-image при наличии `${PROJECT_DIR}/Dockerfile`:
 ```bash
 cd ${PROJECT_DIR}
 docker build -t project:ver1 .
 ```
-2. Запуск контейнера из образа
+2. :arrow_right: Запуск контейнера из образа
 ```bash
 docker run -p 8080:7077/tcp project:ver1
 # Без консоли (detach)
 docker run -d -p 8080:7077/tcp project:ver1
 ```
-3. Удаление конкретного образа
+3. :arrow_right: Остановка контейнера
+```bash
+docker stop fd3ce7...
+```
+4. :arrow_right: Удаление конкретного образа
 ```bash
 docker rmi ad45fe...
 ```
-4. Удаление конкретного контейнера (после остановки)
+5. :arrow_right: Удаление конкретного контейнера (после остановки)
 ```bash
 docker rm fd3ce7...
 ```
-5. Очистка системы от неиспользуемых образов и контейнеров
+6. :arrow_right: Очистка системы от неиспользуемых образов и контейнеров
 ```bash
 docker system prune -f
 ```
