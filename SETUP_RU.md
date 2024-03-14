@@ -134,14 +134,19 @@ pip install "uvicorn[standard]"
     docker run -d -p 8080:7077/tcp project:ver1
 ```
 
-:arrow_right: Остановка контейнера
+:arrow_right: Листинг всех контейнеров
 ```bash
-    docker stop fd3ce7...
+    docker ps -a
 ```
 
 :arrow_right: Вход в консоль внутри контейнера
 ```bash
     docker exec -it dfc37e...
+```
+
+:arrow_right: Остановка контейнера
+```bash
+    docker stop fd3ce7...
 ```
 
 :arrow_right: Удаление конкретного образа
