@@ -6,36 +6,10 @@
 
 ## Содержание ##
 
-[1. Русская локаль](#русская-локаль-ubuntu)    
-[2. Установка FastAPI](#установка-fastapi)    
-[3. Установка Docker](#установка-docker)    
+[1. Установка FastAPI](#установка-fastapi)    
+[2. Установка Docker](#установка-docker)    
+[3. Настройка русской локали](#настройка-русской-локали-ubuntu)    
 [4. Работа с Docker](#работа-с-docker)    
-
-----
-
-## Русская локаль Ubuntu ##
-
-На основе [tokmakov.msk.ru/blog/item/466](https://tokmakov.msk.ru/blog/item/466).
-
-В файле `/etc/locale.gen` раскомментировать строку с `ru_RU.UTF-8` и потом дать
-команду
-```bash
-sudo locale-gen
-```
-После этого отредактировать файл `/etc/default/locale` касательно
-```bash
-LANG=ru_RU.UTF-8
-```
-Можно это сделать не глобально, а на уровне пользователя.
-
-То есть обратить внимание на файлы:
-- `/etc/default/keyboard`
-- `/etc/default/console-setup`
-или аналогично в пользовательском окружении:
-- `~/.keyboard`
-- `~/.console-setup`
-
-[:arrow_up: Содержание](#содержание)
 
 ----
 
@@ -116,6 +90,32 @@ pip install "uvicorn[standard]"
 ```bash
     docker run hello-world
 ```
+
+[:arrow_up: Содержание](#содержание)
+
+----
+
+## Настройка русской локали Ubuntu ##
+
+На основе [tokmakov.msk.ru/blog/item/466](https://tokmakov.msk.ru/blog/item/466).
+
+В файле `/etc/locale.gen` раскомментировать строку с `ru_RU.UTF-8` и потом дать
+команду
+```bash
+sudo locale-gen
+```
+После этого отредактировать файл `/etc/default/locale` касательно
+```bash
+LANG=ru_RU.UTF-8
+```
+Можно это сделать не глобально, а на уровне пользователя.
+
+То есть обратить внимание на файлы:
+- `/etc/default/keyboard`
+- `/etc/default/console-setup`
+или аналогично в пользовательском окружении:
+- `~/.keyboard`
+- `~/.console-setup`
 
 [:arrow_up: Содержание](#содержание)
 
