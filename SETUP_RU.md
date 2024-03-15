@@ -18,12 +18,12 @@
 ## Установка FastAPI ##
 
 ```bash
-pip install "fastapi[all]"
+    pip install "fastapi[all]"
 ```
 Что должно быть эквивалентно:
 ```bash
-pip install fastapi
-pip install "uvicorn[standard]"
+    pip install fastapi
+    pip install "uvicorn[standard]"
 ```
 
 [:arrow_up: Содержание](#содержание)
@@ -112,11 +112,11 @@ pip install "uvicorn[standard]"
 В файле `/etc/locale.gen` раскомментировать строку с `ru_RU.UTF-8` и потом дать
 команду
 ```bash
-sudo locale-gen
+    sudo locale-gen
 ```
 После этого отредактировать файл `/etc/default/locale` касательно
-```bash
-LANG=ru_RU.UTF-8
+```text
+    LANG=ru_RU.UTF-8
 ```
 Можно это сделать не глобально, а на уровне пользователя.
 
