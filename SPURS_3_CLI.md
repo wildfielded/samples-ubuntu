@@ -23,7 +23,7 @@
 ## Генерация SSH-ключа ##
 
 ```bash
-    ssh-keygen -t [rsa|ecdsa|dsa] -b 4096 -f path_to_file.key -C "Comment or mail"
+    ssh-keygen -t [rsa|ecdsa|dsa] -b 4096 -f key_file -C "Comment or mail"
 ```
 
 ----
