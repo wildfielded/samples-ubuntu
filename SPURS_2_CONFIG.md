@@ -9,6 +9,7 @@
 1. [Шрифт консоли Ubuntu](#шрифт-консоли-ubuntu)    
 2. [Русская локаль Ubuntu](#русская-локаль-ubuntu)    
 3. [Преобразование формата SSH-ключа](#преобразование-формата-ssh-ключа)    
+4. [Сертификаты от Let's Encrypt](#сертификаты-lets-encrypt)    
 
 ----
 
@@ -76,6 +77,27 @@ Host    newserver
     Hostname        newserver
     User            admin
     IdentityFile    ~/.ssh/newserverkey
+```
+
+[:arrow_up: Содержание](#содержание)
+
+----
+
+## Сертификаты Let's encrypt ##
+
+:arrow_right: Установка **`certbot`**:
+```bash
+    apt install certbot
+```
+:arrow_right: Придумать, к какой почте привязать сертификат. Выполнять команды
+на том хосте, который вынесен в Internet под тем FQDN, на который нужен
+сертификат. Сами сертификаты будут в `/etc/letsencrypt` (archive, live),
+логи&nbsp;&mdash; `/var/log/letsencrypt/`, расписание&nbsp;&mdash;
+`/etc/cron.d/certbot/`.
+
+:arrow_right: Сама команда, где надо отвечать на некоторые вопросы:
+```bash
+    certbot certonly --standalone -d newsite.wildfielded.site [--dry-run]
 ```
 
 [:arrow_up: Содержание](#содержание)
