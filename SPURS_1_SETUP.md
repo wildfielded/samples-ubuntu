@@ -6,8 +6,26 @@
 
 ## Содержание ##
 
-1. [Установка FastAPI](#установка-fastapi)    
-2. [Установка Docker](#установка-docker)    
+1. [Пакеты после установки Out-of-Box](#out-of-box-пакеты)    
+2. [Установка FastAPI](#установка-fastapi)    
+3. [Установка Docker](#установка-docker)    
+
+----
+
+## Out-of-Box-пакеты ##
+
+Что полезно установить для стандартной работы администратора
+```bash
+    # Бесит, что этого нет в Out-of-Box
+    apt install traceroute
+    # Или посовременнее
+    apt install inetutils-traceroute
+    # Простейшие сетевые утилиты типа netstat, ifconfig
+    apt install net-tools
+    # Для привычной работы с Python
+    apt install python3-pip
+    apt install python3.10-venv
+```
 
 ----
 
