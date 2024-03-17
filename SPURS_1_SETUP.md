@@ -14,7 +14,7 @@
 
 ## Out-of-Box-пакеты ##
 
-Что полезно установить для стандартной работы администратора
+Что полезно установить как рабочий минимум
 ```bash
     # Бесит, что этого нет в Out-of-Box
     apt install traceroute
@@ -25,6 +25,9 @@
     # Для привычной работы с Python
     apt install python3-pip
     apt install python3.10-venv
+    # Само собой
+    apt install lynx
+    apt install mc
 ```
 
 ----
