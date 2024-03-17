@@ -19,6 +19,10 @@
     sudo dpkg-reconfigure console-setup
 ```
 
+Там выбрать последовательно естественно `UTF-8`,
+`Определение оптимального набора символов`, `TerminusBold` (на мой глаз
+оптимально) и далее подобрать размер.
+
 ----
 
 ## Русская локаль Ubuntu ##
@@ -30,10 +34,12 @@
 ```bash
     sudo locale-gen
 ```
+
 После этого отредактировать файл `/etc/default/locale` касательно
 ```text
     LANG=ru_RU.UTF-8
 ```
+
 Можно это сделать не глобально, а на уровне пользователя.
 
 То есть обратить внимание на файлы:
@@ -71,6 +77,7 @@
 ```text
 192.168.222.110     newserver
 ```
+
 и в `~/.ssh/config`:
 ```text
 Host    newserver
@@ -89,6 +96,7 @@ Host    newserver
 ```bash
     apt install certbot
 ```
+
 :arrow_right: Придумать, к какой почте привязать сертификат. Выполнять команды
 на том хосте, который вынесен в Internet под тем FQDN, на который нужен
 сертификат. Сами сертификаты будут в `/etc/letsencrypt` (archive, live),
@@ -98,6 +106,16 @@ Host    newserver
 :arrow_right: Сама команда, где надо отвечать на некоторые вопросы:
 ```bash
     certbot certonly --standalone -d newsite.wildfielded.site [--dry-run]
+```
+
+:arrow_right: Рабочие команды для обновления:
+```bash
+    # Обновляет все сертификаты, какие есть
+    certbot renew [--dry-run]
+    # Персональный вариант
+    certbot renew --cert-name newsite.wildfielded.site [--dry-run]
+    # Интерактивно
+    certbot certonly --force-renewal -d newsite.wildfielded.site [--dry-run]
 ```
 
 [:arrow_up: Содержание](#содержание)
