@@ -26,6 +26,8 @@
     ssh-keygen -t [rsa|ecdsa|dsa] -b 4096 -f key_file -C "Comment or mail"
 ```
 
+[:arrow_up: Содержание](#содержание)
+
 ----
 
 ## Работа с Docker ##
