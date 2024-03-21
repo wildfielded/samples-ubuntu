@@ -77,7 +77,7 @@
 4. :arrow_right: Создать файл `/etc/apt/sources.list.d/docker.list`, в котором
 должна быть строка:
 ```text
-    deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download/docker.com/linux/ubuntu jammy stable
+    deb [arch=amd64 signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu jammy stable
 ```
 
 5. :arrow_right: Ещё раз обновить базу ПО в подключенных репозиториях
