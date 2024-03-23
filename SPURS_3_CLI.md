@@ -57,6 +57,11 @@
     docker exec -it dfc37e...
 ```
 
+:arrow_right: Перезапуск контейнера
+```bash
+    docker restart ade6e3...
+```
+
 :arrow_right: Остановка контейнера
 ```bash
     docker stop fd3ce7...
