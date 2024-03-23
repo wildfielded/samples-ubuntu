@@ -62,6 +62,11 @@
     docker logs -f dc45a2...
 ```
 
+:arrow_right: Последние логи контейнера
+```bash
+    docker logs --tail 10 dc45a2...
+```
+
 :arrow_right: Перезапуск контейнера
 ```bash
     docker restart ade6e3...
