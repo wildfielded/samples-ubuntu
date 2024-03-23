@@ -57,6 +57,11 @@
     docker exec -it dfc37e...
 ```
 
+:arrow_right: Логи контейнера в реальном времени
+```bash
+    docker logs -f dc45a2...
+```
+
 :arrow_right: Перезапуск контейнера
 ```bash
     docker restart ade6e3...
