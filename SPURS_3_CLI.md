@@ -8,7 +8,8 @@
 
 1. [Замена концов Win-строк на UNIX-строки](#замена-в-текстовом-файле-windows-строк-в-unix-строки)    
 2. [Генерация SSH-ключа под Windows и Ubuntu](#генерация-ssh-ключа)
-3. [Работа с Docker](#работа-с-docker)    
+3. [Передача SSH-ключа на SSH-сервер]()    
+4. [Работа с Docker](#работа-с-docker)    
 
 ----
 
@@ -26,6 +27,16 @@
 
 ```bash
     ssh-keygen -t [rsa|ecdsa|dsa] -b 4096 -f key_file -C "Comment or mail"
+```
+
+[:arrow_up: Содержание](#содержание)
+
+----
+
+## Передача SSH-key на SSH-server ##
+
+```bash
+    ssh-copy-id -i ~/.ssh/adminkey.pub ded@192.168.10.10
 ```
 
 [:arrow_up: Содержание](#содержание)
