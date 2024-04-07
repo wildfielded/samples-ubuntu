@@ -10,6 +10,7 @@
 2. [Ввод в MS Domain по классике Linux]()    
 3. [Ввод в MS Domain через astra-sssd-client]()    
 4. [Автообновление записи в DNS]()    
+5. [Ввод в FreeIPA]()    
 
 ----
 
