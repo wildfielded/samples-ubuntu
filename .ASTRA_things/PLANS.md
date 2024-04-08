@@ -51,6 +51,12 @@ NO_PROXY="127.0.0.1, localhost, 192.168.0.0/24, wildfielded.site"
 прокси, отличных от общесистемных, это можно сделать подобным образом в
 пользовательском **`~/.bashrc`** или в **`~/.profile`**.
 
+:arrow_right: Для работы **apt** создать файл **`/etc/apt/apt.conf.d/80proxy`**:
+
+```bash
+touch /etc/apt/apt.conf.d/80proxy
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
