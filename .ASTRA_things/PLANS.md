@@ -41,6 +41,12 @@ HTTP_PROXY="http://proxyuser:password123@192.168.192.168:3128"
 FTP_PROXY="http://proxyuser:password123@192.168.192.168:3128"
 ```
 
+Для исключений в **`/etc/environment`** добавляется строка со списком адресов:
+
+```text
+NO_PROXY="127.0.0.1, localhost, 192.168.0.0/24, wildfielded.site"
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
