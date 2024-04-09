@@ -65,6 +65,9 @@ Acquire::http::Proxy "http://proxyuser:password123@192.168.192.168:3128";
 Acquire::ftp::Proxy "http://proxyuser:password123@192.168.192.168:3128";
 ```
 
+:arrow_right: Некоторые программы используют **wget**. Поэтому в файле
+**`/etc/wgetrc`** надо задать подобные же параметры:
+
 [:arrow_up: Содержание](#содержание)
 
 ----
