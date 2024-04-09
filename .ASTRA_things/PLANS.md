@@ -9,7 +9,7 @@
 1. [Установка](#установка)    
 2. [Настройка сети](#настройка-сети)    
 3. [Ввод в MS Domain по классике Linux]()    
-4. [Ввод в MS Domain через astra-sssd-client]()    
+4. [Ввод в MS Domain через astra-sssd-client](#домен-microsoft)    
 5. [Автообновление записи в DNS]()    
 6. [Установка FreeIPA и настройка доверительных отношений с MS AD]()    
 7. [Ввод в FreeIPA]()    
@@ -79,6 +79,12 @@ ftp_proxy = http://proxyuser:password123@192.168.192.168:3128
 ----
 
 ## Домен Microsoft ##
+
+:arrow_right:
+
+```bash
+apt install fly-admin-ad-sssd-client
+```
 
 [:arrow_up: Содержание](#содержание)
 
