@@ -80,7 +80,7 @@ ftp_proxy = http://proxyuser:password123@192.168.192.168:3128
 
 ## Домен Microsoft ##
 
-:arrow_right:
+:arrow_right: Через **Synaptic** или **apt** установить:
 
 ```bash
 apt install fly-admin-ad-sssd-client
