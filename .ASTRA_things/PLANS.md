@@ -92,7 +92,9 @@ ftp_proxy = http://proxyuser:password123@192.168.192.168:3128
 ```bash
 apt install fly-admin-ad-sssd-client
 ```
-Ввод в домен производится через «Панель управления» → «Сеть» → «Настройка клиента SSSD Fly».
+
+Ввод в домен производится через &laquo;Панель управления&raquo; :arrow_right:
+&laquo;Сеть&raquo; :arrow_right: &laquo;Настройка клиента SSSD Fly&raquo;.
 
 [:arrow_up: Содержание](#содержание)
 
