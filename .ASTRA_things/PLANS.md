@@ -94,7 +94,9 @@ apt install fly-admin-ad-sssd-client
 ```
 
 Ввод в домен производится через &laquo;Панель управления&raquo; :arrow_right:
-&laquo;Сеть&raquo; :arrow_right: &laquo;Настройка клиента SSSD Fly&raquo;.
+&laquo;Сеть&raquo; :arrow_right: &laquo;Настройка клиента SSSD Fly&raquo;. При
+этом компьютер появляется в структуре Active Directory. После перезагрузки можно
+входить в систему под доменным логином, предварительно выбрав домен.
 
 [:arrow_up: Содержание](#содержание)
 
