@@ -107,6 +107,9 @@ User_Alias      ASTRA_ADMINS = admin1, admin2, admin3
 ASTRA_ADMINS    ALL = (ALL:ALL) ALL
 ```
 
+где в `ASTRA_ADMINS` перечислить доменные логины, которым нужны админские
+полномочия на рабочих станциях Astra Linux.
+
 [:arrow_up: Содержание](#содержание)
 
 ----
