@@ -102,6 +102,11 @@ apt install fly-admin-ad-sssd-client
 `sudo` и для будущей автоматизации можно создать файл
 **`/etc/sudoers.d/astra_admins`**, и в нём прописать:
 
+```text
+User_Alias      ASTRA_ADMINS = admin1, admin2, admin3
+ASTRA_ADMINS    ALL = (ALL:ALL) ALL
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
