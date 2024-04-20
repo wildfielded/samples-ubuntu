@@ -92,7 +92,14 @@ ftp_proxy = http://proxyuser:password123@192.168.192.168:3128
 
 ```bash
 apt purge ntp
+apt purge chrony    # не обязательно
 apt autoremove
+```
+
+```bash
+timedatectl set-ntp 1
+timedatectl set-local-rtc 0
+systemctl start systemd-timesyncd
 ```
 
 :arrow_right: Через **Synaptic** или **apt** установить:
