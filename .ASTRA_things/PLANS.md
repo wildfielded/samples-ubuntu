@@ -96,6 +96,16 @@ apt purge chrony    # не обязательно
 apt autoremove
 ```
 
+В файле **`/etc/systemd/timesyncd.conf`** добавить строки с адресами основного и
+резервного NTP-серверов:
+
+```text
+NTP=192.168.192.50
+FallbackNTP=192.168.192.60
+```
+
+И далее
+
 ```bash
 timedatectl set-ntp 1
 timedatectl set-local-rtc 0
