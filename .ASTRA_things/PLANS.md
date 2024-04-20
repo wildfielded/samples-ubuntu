@@ -88,6 +88,13 @@ ftp_proxy = http://proxyuser:password123@192.168.192.168:3128
 
 ## Домен Microsoft ##
 
+:arrow_right: Сначала нормально настроить синхронизацию времени.
+
+```bash
+apt purge ntp
+apt autoremove
+```
+
 :arrow_right: Через **Synaptic** или **apt** установить:
 
 ```bash
