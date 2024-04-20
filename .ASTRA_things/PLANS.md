@@ -112,7 +112,8 @@ timedatectl set-local-rtc 0
 systemctl start systemd-timesyncd
 ```
 
-:arrow_right: Через **Synaptic** или **apt** установить:
+:arrow_right: Можно заранее поправить **`/etc/hostname`**, указав FQDN
+компьютера. Установить
 
 ```bash
 apt install fly-admin-ad-sssd-client
