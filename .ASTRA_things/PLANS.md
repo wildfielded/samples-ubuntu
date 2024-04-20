@@ -138,7 +138,7 @@ ASTRA_ADMINS    ALL = (ALL:ALL) ALL
 :arrow_right: Вывод компьютера из домена производится командой:
 
 ```bash
-sudo astra-ad-sssd-client -U
+astra-ad-sssd-client -U
 ```
 
 [:arrow_up: Содержание](#содержание)
@@ -146,6 +146,17 @@ sudo astra-ad-sssd-client -U
 ----
 
 ## Принтеры ##
+
+:arrow_right: Для установки сетевого принтеров:
+
+```bash
+apt install libnss-mdns
+apt install cups-browsed
+```
+
+И действовать через &laquo;Панель управления&raquo; :arrow_right:
+&laquo;Оборудование&raquo; :arrow_right: &laquo;Принтеры&raquo;. Настройки
+печати надо производить от пользователя, который входит в группу `lpadmin`.
 
 [:arrow_up: Содержание](#содержание)
 
