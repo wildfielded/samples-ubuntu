@@ -177,6 +177,12 @@ xfreerdp /f /u:Family_NM /v:192.168.192.168 /cert:ignore /printer:EPSON_WF-M5799
 xfreerdp /f /u:Family_NM /v:192.168.192.168 /cert:ignore /printer:EPSON_WF-M5799 /smartcard:Aktiv
 ```
 
+Можно работать с графическим RDP-клиентом Remmina.
+
+```bash
+apt install remmina
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
