@@ -172,7 +172,9 @@ apt install pcsc-tools
 ```bash
 apt install freerdp2-x11
 # Для Aladdin eToken:
-xfreerdp /f /u:Family_NM /v:ariadna_rdcb_nlb.rkb.local /cert:ignore /printer:EPSON_WF-M5799_Series_kab14 /smartcard:eToken
+xfreerdp /f /u:Family_NM /v:192.168.192.168 /cert:ignore /printer:EPSON_WF-M5799 /smartcard:eToken
+# Для RuToken:
+xfreerdp /f /u:Family_NM /v:192.168.192.168 /cert:ignore /printer:EPSON_WF-M5799 /smartcard:Aktiv
 ```
 
 [:arrow_up: Содержание](#содержание)
