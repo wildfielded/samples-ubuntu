@@ -170,6 +170,7 @@ apt install pcsc-tools
 :arrow_right: Проброс токена и принтера по RDP:
 
 ```bash
+apt install freerdp2-x11
 ```
 
 [:arrow_up: Содержание](#содержание)
