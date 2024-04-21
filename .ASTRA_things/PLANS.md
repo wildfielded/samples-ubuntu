@@ -167,6 +167,11 @@ apt install pcsc-tools
 
 Токены смотреть утилитой `pcsc_scan`.
 
+:arrow_right: Проброс токена и принтера по RDP:
+
+```bash
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
