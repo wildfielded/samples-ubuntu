@@ -189,6 +189,11 @@ apt install remmina
 :arrow_right: Поддержка SSO (Single Sign On) в браузерах
 
 Можно настроить браузеры, чтобы заходить без дополнительной авторизации на сайты.
+В файле **`/etc/sssd/sssd.conf`** изменить параметр:
+
+```text
+ad_gpo_access_control = permissive
+```
 
 [:arrow_up: Содержание](#содержание)
 
