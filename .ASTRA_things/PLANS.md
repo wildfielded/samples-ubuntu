@@ -203,6 +203,10 @@ ad_gpo_access_control = permissive
         default_ccache_name = FILE:/tmp/krb5cc_%{uid}
 ```
 
+Для браузеров **Yandex Browser** и **Chromium** создать файлы
+**`/etc/opt/yandex/browser/policies/managed/rkb_local.json`** и
+**`/etc/chromium/policies/managed/rkb_local.json`**.
+
 [:arrow_up: Содержание](#содержание)
 
 ----
