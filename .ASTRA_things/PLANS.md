@@ -214,6 +214,18 @@ ad_gpo_access_control = permissive
 }
 ```
 
+(Можно проверить в `browser:policy` для **Yandex Browser** и в `chrome:policy`
+для **Chromium**.)
+
+В браузере **Mozilla Firefox** войти в `about:config` и задать значение
+`.sub.domain` для следующих параметров:
+
+```text
+network.automatic-ntlm-auth.trusted-uris
+network.negotiate-auth.delegation-uris
+network.negotiate-auth.trusted-uris
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
