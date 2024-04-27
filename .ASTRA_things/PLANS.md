@@ -205,7 +205,14 @@ ad_gpo_access_control = permissive
 
 Для браузеров **Yandex Browser** и **Chromium** создать файлы
 **`/etc/opt/yandex/browser/policies/managed/rkb_local.json`** и
-**`/etc/chromium/policies/managed/rkb_local.json`**.
+**`/etc/chromium/policies/managed/rkb_local.json`** с одинаковым содержимым:
+
+```text
+{
+"AuthServerAllowlist": "*.rkb.local",
+"AuthNegotiateDelegateAllowlist": "*.rkb.local"
+}
+```
 
 [:arrow_up: Содержание](#содержание)
 
