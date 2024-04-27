@@ -195,6 +195,14 @@ apt install remmina
 ad_gpo_access_control = permissive
 ```
 
+В файле **`/etc/krb5.conf`** в разделе `[libdefaults]` отредактировать/добавить:
+
+```text
+[libdefaults]
+        default_realm = RKB.LOCAL
+        default_ccache_name = FILE:/tmp/krb5cc_%{uid}
+```
+
 [:arrow_up: Содержание](#содержание)
 
 ----
